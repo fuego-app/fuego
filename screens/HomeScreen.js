@@ -98,6 +98,22 @@ export default class HomeScreen extends React.Component {
   };
 }
 
+class Coupon extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    let pic = {
+      uri: this.props.pic
+    };
+    return (
+      <View style={styles.container}>
+        <Image source={pic} style={{width: Dimensions.get('window').width-20, height: Dimensions.get('window').height-20 , flex: 0.5, resizeMode: 'contain' }}/>
+      </View>
+    );
+  }
+}
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
