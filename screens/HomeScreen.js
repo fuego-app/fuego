@@ -7,6 +7,7 @@ import {
   Text,
   TouchableOpacity,
   View,
+  Dimensions
 } from 'react-native';
 import { WebBrowser } from 'expo';
 
@@ -20,10 +21,7 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-
-        </ScrollView>
-
+        <Coupon pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
       </View>
     );
   }
@@ -50,6 +48,8 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   developmentModeText: {
     marginBottom: 20,
