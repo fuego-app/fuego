@@ -4,14 +4,10 @@
   "coupons": [
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
     { "id": "1", 
       "title": "Buy One Get One For $1 at Nekter", 
       "link": "https://pbs.twimg.com/media/DoGvkvgW0AE1Vu1.jpg" 
     }
-=======
-    { "id": "1", "title": "Buy One Get One For $1 at Nekter", "link": "https://pbs.twimg.com/media/DoGvkvgW0AE1Vu1.jpg" }
->>>>>>> parent of 41249b2... managed to make the image actually show up in the coupons thing
 =======
     { "id": "1", "title": "Buy One Get One For $1 at Nekter", "link": "https://pbs.twimg.com/media/DoGvkvgW0AE1Vu1.jpg" }
 >>>>>>> parent of 41249b2... managed to make the image actually show up in the coupons thing
