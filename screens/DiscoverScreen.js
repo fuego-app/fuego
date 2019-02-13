@@ -15,5 +15,9 @@ export default class DiscoverScreen extends React.Component {
         </View>
       )
     }
+    return(
+      <View>
+      </View>
+    )
   }
 }
