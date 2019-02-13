@@ -7,17 +7,18 @@ export default class DiscoverScreen extends React.Component {
   };
 
   render(){
-
-    if(this.state.isLoading){
       return(
-        <View style={{flex: 1, padding: 20}}>
-          <ActivityIndicator/>
+        <View style={styles.title}>
+            <Text>
+                Discover foobar
+            </Text>
         </View>
       )
-    }
-    return(
-      <View>
-      </View>
-    )
   }
 }
+
+const styles = StyleSheet.create({
+  title: {
+    flex: 1,
+  },
+});

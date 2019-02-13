@@ -41,7 +41,7 @@ LinksStack.navigationOptions = {
 };
 
 const DiscoverStack = createStackNavigator({
-  Discover: LinksScreen,
+  Discover: DiscoverScreen,
 });
 
 DiscoverStack.navigationOptions = {
