@@ -12,9 +12,9 @@
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "splash": {
-      "image": "./assets/images/fuego-logo.png",
+      "image": "./assets/images/icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#f4b058"
+      "backgroundColor": "#ffae42"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
