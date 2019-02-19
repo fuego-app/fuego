@@ -133,4 +133,15 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#2e78b7',
   },
+  couponButton: {
+    width: 110,
+    height: 120,
+    borderRadius:10,
+    backgroundColor: '#ff9625',
+  },
+  couponButtonImage: {
+    width: 100,
+    height: 100,
+    resizeMode: 'contain',
+  },
 });
