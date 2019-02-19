@@ -54,25 +54,24 @@ export default class LinksScreen extends React.Component {
       </View>
     );
   }
-  const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    couponButton: {
-      width: 110,
-      height: 120,
-      borderRadius:10,
-      backgroundColor: '#ff9625',
-    },
-    couponImage: {
-      width: 100,
-      height: 100,
-      resizeMode: 'contain',
-    },
-  });
-
 
 }
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  couponButton: {
+    width: 110,
+    height: 120,
+    borderRadius:10,
+    backgroundColor: '#ff9625',
+  },
+  couponImage: {
+    width: 100,
+    height: 100,
+    resizeMode: 'contain',
+  },
+});
