@@ -78,7 +78,8 @@ const styles = StyleSheet.create({
     marginBottom: 60,
     marginRight: 20,
     height: 30,
-    width: 100
+    width: 100,
+    borderRadius: 5
   },
 
   redButton: {
@@ -87,7 +88,8 @@ const styles = StyleSheet.create({
     marginBottom: 60,
     marginLeft: 20,
     height: 30,
-    width: 100
+    width: 100,
+    borderRadius: 5
   },
 
   container: {
