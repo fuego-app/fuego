@@ -16,11 +16,8 @@ import { MonoText } from '../components/StyledText';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
-<<<<<<< HEAD
     title: 'Fuego'
-=======
     header: null,
->>>>>>> parent of bfc4b47... Update HomeScreen.js
   };
 
   constructor() {
