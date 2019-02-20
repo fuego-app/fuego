@@ -16,7 +16,7 @@ import { MonoText } from '../components/StyledText';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
-    headerTitle: (<Image style={{ width: Dimensions.get('window').width-20, flex: 0.5, resizeMode: 'contain'}} source={require('./assets/images/FuegoBanner.png')}/>)
+    headerTitle: (<Image style={{ width: Dimensions.get('window').width-20, flex: 0.5, resizeMode: 'contain'}} source={require('../assets/images/FuegoBanner.png')}/>)
   };
 
   constructor() {
