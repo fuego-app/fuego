@@ -35,7 +35,7 @@ export default class HomeScreen extends React.Component {
 
         <TouchableOpacity
           style={styles.redButton}
-          onPress={this.onPress}
+          onPress={ () => this._incrementCount()}
         >
           <Text> Not Interested </Text>
         </TouchableOpacity>
@@ -43,9 +43,9 @@ export default class HomeScreen extends React.Component {
 
         <TouchableOpacity
           style={styles.greenButton}
-          onPress={this.onPress}
+          onPress={ () => this._incrementCount()}
         >
-          <Text> Interested </Text>
+          <Text> {this.state.count} </Text>
         </TouchableOpacity>
       </View>
     );
