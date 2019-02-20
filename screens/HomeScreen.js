@@ -7,7 +7,8 @@ import {
   Text,
   TouchableOpacity,
   View,
-  Dimensions
+  Dimensions,
+  FlatList
 } from 'react-native';
 import { WebBrowser } from 'expo';
 
@@ -18,10 +19,34 @@ export default class HomeScreen extends React.Component {
     header: null,
   };
 
+  constructor() {
+    super();
+    this.state = {count: 1};
+  }
+
+  _incrementCount = () => {
+    this.setState(prevState => ({ count: prevState.count + 1 }));
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <Coupon pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
+
+        <TouchableOpacity
+          style={styles.redButton}
+          onPress={this.onPress}
+        >
+          <Text> Not Interested </Text>
+        </TouchableOpacity>
+
+
+        <TouchableOpacity
+          style={styles.greenButton}
+          onPress={this.onPress}
+        >
+          <Text> Interested </Text>
+        </TouchableOpacity>
       </View>
     );
   }
@@ -45,6 +70,19 @@ class Coupon extends React.Component {
 }
 
 const styles = StyleSheet.create({
+
+  greenButton: {
+    alignItems: 'center',
+    backgroundColor: '#0f0',
+    padding: 10
+  },
+
+  redButton: {
+    alignItems: 'center',
+    backgroundColor: '#f00',
+    padding: 10
+  },
+
   container: {
     flex: 1,
     backgroundColor: '#fff',
