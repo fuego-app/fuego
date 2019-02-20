@@ -82,7 +82,6 @@ const styles = StyleSheet.create({
   },
 
   redButton: {
-    alignItems: 'center',
     backgroundColor: '#f00',
     padding: 10,
     marginBottom: 60,
