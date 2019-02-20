@@ -16,11 +16,7 @@ import { MonoText } from '../components/StyledText';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
-<<<<<<< HEAD
     title: 'Fuego'
-=======
-    title: 'Fuego',
->>>>>>> parent of 31c5884... Attempt to get banner on
   };
 
   constructor() {
@@ -34,13 +30,8 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View style = {styles.container}>
-        <Coupon 
-        pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
-      <View style = {{textAlign: 'center'}}>
+      <View style = {}>
         <Coupon pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
-
-        <Text> Nekter is offering a {this.state.count}% discount!</Text>
 
         <TouchableOpacity
           style={styles.redButton}
