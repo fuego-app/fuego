@@ -30,10 +30,9 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View style = {{textAlign: 'center'}}>
-        <Coupon pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
-
-        <Text> Nekter is offering a {this.state.count}% discount!</Text>
+      <View style = {styles.container}>
+        <Coupon 
+        pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
 
         <TouchableOpacity
           style={styles.redButton}
@@ -49,6 +48,7 @@ export default class HomeScreen extends React.Component {
         >
           <Text> Interested </Text>
         </TouchableOpacity>
+
       </View>
     );
   }
@@ -78,7 +78,7 @@ const styles = StyleSheet.create({
     padding: 10,
     position: 'absolute',
     bottom: 15,
-    right: 0,
+    right: 30,
     height: 40,
     width: 120,
     borderRadius: 5,
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
     padding: 10,
     position: 'absolute',
     bottom: 15,
-    left: 0,
+    left: 30,
     height: 40,
     width: 120,
     borderRadius: 5,
