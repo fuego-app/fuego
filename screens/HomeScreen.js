@@ -16,7 +16,11 @@ import { MonoText } from '../components/StyledText';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
+<<<<<<< HEAD
+    title: 'Fuego'
+=======
     title: 'Fuego',
+>>>>>>> parent of 31c5884... Attempt to get banner on
   };
 
   constructor() {
@@ -30,6 +34,9 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
+      <View style = {styles.container}>
+        <Coupon 
+        pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
       <View style = {{textAlign: 'center'}}>
         <Coupon pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
 
@@ -65,7 +72,9 @@ class Coupon extends React.Component {
     };
     return (
       <View style={styles.container}>
+        <Card>
         <Image source={pic} style={{width: Dimensions.get('window').width-20, height: Dimensions.get('window').height-20 , flex: 0.5, resizeMode: 'contain' }}/>
+        </Card>
       </View>
     );
   }
