@@ -16,7 +16,7 @@ import { MonoText } from '../components/StyledText';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
-    title: 'Fuego',
+    headerTitle: (<Image style={{ width: Dimensions.get('window').width-20, flex: 0.5, resizeMode: 'contain'}} source={require('./assets/images/FuegoBanner.png')}/>)
   };
 
   constructor() {
@@ -31,7 +31,7 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
       <View style = {styles.container}>
-        <Coupon 
+        <Coupon
         pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
 
         <TouchableOpacity
