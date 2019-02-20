@@ -73,15 +73,22 @@ class Coupon extends React.Component {
 const styles = StyleSheet.create({
 
   greenButton: {
-    alignItems: 'center',
     backgroundColor: '#0f0',
-    padding: 10
+    padding: 10,
+    marginBottom: 60,
+    marginRight: 20,
+    height: 30,
+    width: 100
   },
 
   redButton: {
     alignItems: 'center',
     backgroundColor: '#f00',
-    padding: 10
+    padding: 10,
+    marginBottom: 60,
+    marginLeft: 20,
+    height: 30,
+    width: 100
   },
 
   container: {
