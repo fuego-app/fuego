@@ -16,7 +16,11 @@ import { MonoText } from '../components/StyledText';
 
 export default class HomeScreen extends React.Component {
   static navigationOptions = {
+<<<<<<< HEAD
     headerTitle: (<Image style={{ width: Dimensions.get('window').width-20, flex: 0.5, resizeMode: 'contain'}} source={require('../assets/images/FuegoBanner.png')}/>)
+=======
+    header: null,
+>>>>>>> parent of bfc4b47... Update HomeScreen.js
   };
 
   constructor() {
