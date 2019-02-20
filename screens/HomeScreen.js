@@ -30,16 +30,13 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-<<<<<<< HEAD
       <View style = {styles.container}>
         <Coupon
         pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
-=======
       <View style = {{textAlign: 'center'}}>
         <Coupon pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
 
         <Text> Nekter is offering a {this.state.count}% discount!</Text>
->>>>>>> parent of 6eb7a0c... Merge branch 'master' of https://github.com/fuego-app/fuego
 
         <TouchableOpacity
           style={styles.redButton}
@@ -71,7 +68,9 @@ class Coupon extends React.Component {
     };
     return (
       <View style={styles.container}>
+        <Card>
         <Image source={pic} style={{width: Dimensions.get('window').width-20, height: Dimensions.get('window').height-20 , flex: 0.5, resizeMode: 'contain' }}/>
+        </Card>
       </View>
     );
   }
