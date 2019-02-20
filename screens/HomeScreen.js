@@ -30,9 +30,16 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
+<<<<<<< HEAD
       <View style = {styles.container}>
         <Coupon
         pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
+=======
+      <View style = {{textAlign: 'center'}}>
+        <Coupon pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
+
+        <Text> Nekter is offering a {this.state.count}% discount!</Text>
+>>>>>>> parent of 6eb7a0c... Merge branch 'master' of https://github.com/fuego-app/fuego
 
         <TouchableOpacity
           style={styles.redButton}
@@ -48,7 +55,6 @@ export default class HomeScreen extends React.Component {
         >
           <Text> Interested </Text>
         </TouchableOpacity>
-
       </View>
     );
   }
@@ -78,7 +84,7 @@ const styles = StyleSheet.create({
     padding: 10,
     position: 'absolute',
     bottom: 15,
-    right: 30,
+    right: 0,
     height: 40,
     width: 120,
     borderRadius: 5,
@@ -90,7 +96,7 @@ const styles = StyleSheet.create({
     padding: 10,
     position: 'absolute',
     bottom: 15,
-    left: 30,
+    left: 0,
     height: 40,
     width: 120,
     borderRadius: 5,
