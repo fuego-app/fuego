@@ -75,21 +75,25 @@ const styles = StyleSheet.create({
   greenButton: {
     backgroundColor: '#0f0',
     padding: 10,
-    marginBottom: 60,
-    marginRight: 20,
-    height: 30,
-    width: 100,
-    borderRadius: 5
+    position: 'absolute',
+    bottom: 15,
+    right: 0,
+    height: 40,
+    width: 120,
+    borderRadius: 5,
+    textAlign: 'center'
   },
 
   redButton: {
     backgroundColor: '#f00',
     padding: 10,
-    marginBottom: 60,
-    marginLeft: 20,
-    height: 30,
-    width: 100,
-    borderRadius: 5
+    position: 'absolute',
+    bottom: 15,
+    left: 0,
+    height: 40,
+    width: 120,
+    borderRadius: 5,
+    textAlign: 'center'
   },
 
   container: {
