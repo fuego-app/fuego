@@ -1,5 +1,5 @@
 import React from 'react';
-import { Image, StyleSheet, TouchableOpacity, View, FlatList, ActivityIndicator, Text, ScrollView} from 'react-native';
+import { Image, StyleSheet, TouchableOpacity, View, FlatList, ActivityIndicator, Text, ScrollView } from 'react-native';
 import { ExpoLinksView } from '@expo/samples';
 
 export default class LinksScreen extends React.Component {
@@ -43,10 +43,10 @@ export default class LinksScreen extends React.Component {
 
     return(
       <View style={{flex: 1, paddingTop:20}}>
-        <FlatList
+        <GridList
           data={this.state.dataSource}
-          renderItem={({item}) =>  <TouchableOpacity style={{width: 110, height: 160, borderRadius:10, backgroundColor: '#ff9625', justifyContent: 'center', alignItems: 'center'}} onPress={this.onPress} >
-            <Image source={{uri: item.link}} style={{width: 100, height: 100, resizeMode: 'contain'}}/>
+          renderItem={({item}) =>  <TouchableOpacity style={{width: 110, height: 180, borderRadius:10, backgroundColor: '#ff9625', justifyContent: 'center', alignItems: 'center'}} onPress={this.onPress} >
+            <Image source={{uri: item.link}} style={{width: 100, height: 120, resizeMode: 'contain'}}/>
             <Text> {item.title} </Text>
           </TouchableOpacity> }
           keyExtractor={({id}, index) => id}
