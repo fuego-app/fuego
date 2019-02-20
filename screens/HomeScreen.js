@@ -32,6 +32,7 @@ export default class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Coupon pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
+        <Text> Nekter is offering a {this.state.count}% discount!</Text>
 
         <TouchableOpacity
           style={styles.redButton}
