@@ -30,7 +30,7 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View style = {{textAlign: 'center'}}>
         <Coupon pic = 'https://theaceagency.com/wp-content/uploads/Nekter7.26.1.jpg'/>
         <Text> Nekter is offering a {this.state.count}% discount!</Text>
 
